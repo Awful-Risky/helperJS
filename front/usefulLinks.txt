@@ -1,2 +1,7 @@
 Links:
-https://cdnjs.com/
+https://cdnjs.com/                 (Common CSS/JS library repository…open source CDN)
+https://docs.angularjs.org/api     (angular 1.x documentation)
+https://www.npmjs.com/browse/star  (most popular node packages)
+
+
+
