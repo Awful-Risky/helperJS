@@ -45,6 +45,7 @@ var Person = (function(){
 
 
 var reginald = new Person('Reginald', 'BoBeginald', 'purple', 'beatbox')
+console.log(reginald)
 reginald.whatAreYouDoing()
 
 var paytonManning = new Person ('Payton', 'Manning', 'H.G.H', 'not retiring when he should have')
