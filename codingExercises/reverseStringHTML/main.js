@@ -22,7 +22,10 @@ angular.module('angBasic').controller('angTroller', [
 	// console.log(word.split("").reverse().join(""));
 		return (word.split("").reverse().join(""));
 	};
+
+	//ng-click 
 	$scope.reverse = function (string) {
+		//brings the returns of reverseWord onto scope/binding with angular
 		$scope.what = reverseWord(string)
 	};
 
