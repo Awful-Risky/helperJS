@@ -9,7 +9,12 @@
 <body ng-controller="meanTroller">
 	
 	<span class="cssTest">{{testScope}}</span>
-	
+
+
+	<p>Enter a String to Save in MongoDB</p>
+	<input type="submit()" ng-model="string">
+		<button ng-click="mongoSave(string)">Submit</button>
+	</input>
 	<span class="cssTest">{{savedMongoString}}</span>
 
 </body>
