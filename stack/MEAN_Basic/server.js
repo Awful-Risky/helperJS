@@ -1,12 +1,19 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
+var mongoose   = require('mongoose');
 
-// Controllers
+//---Require Back-End Controllers---------------------------
+var mongoCtrl = require('./controllers/mongoController.js')
 
-
-// Create Express App Object \\
+//---Create Express App Object------------------------------
 var app = express();
+
+
+//---Spin Up Database Server at db = meanDB
+mongoose.connect('mongodb://localhost/meanDB');
+
+
 
 // Application Configuration \\
 app.use(logger('dev'));
@@ -19,7 +26,7 @@ app.get('/', function(req, res){
   res.sendFile('home.html', {root : __dirname + '/public/html'})
 });
 
-
+app.post('/mongoTest', mongoCtrl.mongoTest);
 
 
 // Creating Server and Listening for Connections \\
