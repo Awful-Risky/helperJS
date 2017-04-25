@@ -28,5 +28,4 @@ angular.module('angBasic').controller('angTroller', [
 			//brings the returns of reverseWord onto scope/binding with angular
 			$scope.what = reverseWord(string)
 		};
-	};
-]);
+	}]);
