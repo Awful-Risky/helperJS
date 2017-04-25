@@ -14,20 +14,19 @@ angular.module('angBasic').controller('angTroller', [
 		// console.log(angular);
 		// $scope.testScope = 'Your On $Scope';
 
-	var reverseWord = function (word) {
-	// var splitWord = word.split("");
-	// console.log(splitWord);
-	// var reverseSplit = splitWord.reverse().join("");
-	// console.log(reverseSplit);
-	// console.log(word.split("").reverse().join(""));
-		return (word.split("").reverse().join(""));
+		var reverseWord = function (word) {
+		// var splitWord = word.split("");
+		// console.log(splitWord);
+		// var reverseSplit = splitWord.reverse().join("");
+		// console.log(reverseSplit);
+		// console.log(word.split("").reverse().join(""));
+			return (word.split("").reverse().join(""));
+		};
+
+		//ng-click 
+		$scope.reverse = function (string) {
+			//brings the returns of reverseWord onto scope/binding with angular
+			$scope.what = reverseWord(string)
+		};
 	};
-
-	//ng-click 
-	$scope.reverse = function (string) {
-		//brings the returns of reverseWord onto scope/binding with angular
-		$scope.what = reverseWord(string)
-	};
-
-
-}]);
+]);
