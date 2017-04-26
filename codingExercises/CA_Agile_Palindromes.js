@@ -39,7 +39,8 @@ console.log(checkPalindrome('zamanaplanacanalpanamaxbobx'));
 
 // var test = 'momyyydad'
 
-var subStrings = function (string) {
+//Make all possible strings that meet the requirements
+var allStrings = function (string) {
   var wordArray = [];
   for (var i = 0; i < string.length; i++) {
       // console.log(test.substring(i));
@@ -55,9 +56,10 @@ var subStrings = function (string) {
   return wordArray
 }
 
+//Test all possible strings for palindromesness, then add to array if so...
 var validPalindromes = []
 var findPalindromes = function (isIt) {
-  var subString = subStrings(isIt);
+  var subString = allStrings(isIt);
   for (var r = 0; r < subString.length; r++) {
       // console.log('hey', subString[r])
     if (checkPalindrome(subString[r])) {
