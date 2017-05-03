@@ -8,8 +8,8 @@ for (var i = 0; i < inputArray.length; i++) {
 console.log('1st', sumUp);
 
 
-//Now make it a function using ECMAScript6:
-function sum (inputArray) {
+//Now make it a function using ECMAScript6 'let' block scope:
+function sum (inputArr) {
 	let sumUp = 0;
 	for (let i = 0; i < inputArray.length; i++) {
 		console.log('Es6', inputArray[i]);
