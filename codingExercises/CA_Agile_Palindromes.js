@@ -56,7 +56,7 @@ var allStrings = function (string) {
   return wordArray
 }
 
-//Test all possible strings for palindromesness, then add to array if so...
+//Test all possible strings for palindromeness, then add to array if so...
 var validPalindromes = []
 var findPalindromes = function (isIt) {
   var subString = allStrings(isIt);
