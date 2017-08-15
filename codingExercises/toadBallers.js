@@ -15,15 +15,12 @@ var players = ['a',
 			   'l'];
 
 
-var newArray = [];
-
-
-//Populate all possible combinations - *** Including duplicates
+//Populate all possible combinations-Including duplicates
 function populateDirtFullSet (input) {
 	// dirtyFull list of all possible combos
 	for (var i = 0; i < input.length; i++) {
 		// console.log(i)
-		var match = (input[i])
+		// var match = (input[i])
 		// console.log(match)
 		for (var j = 0; j < input.length; j++) {
 			if (input[j] !== input[i]) {
@@ -32,9 +29,10 @@ function populateDirtFullSet (input) {
 					p2 : input[i],
 				})
 			}
+			console.log(pusher); 
 		}
-		newArray.push(pusher);
-		console.log(pusher); 
+		// newArray.push(pusher);
+		
 		console.log('BREAK');
 	};
 };
