@@ -21,7 +21,7 @@ function roundItUp (it) {
 	else {
 		// console.log('is it negative', it)
 		// console.log(it -= it % 1)
-		return (it -= it % 1);
+		return (it -= it % 1);  //Javascript is funny this way...subtract neg num with neg num to increase value???
 	}
 }
 
