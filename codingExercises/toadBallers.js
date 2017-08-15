@@ -1,6 +1,8 @@
 var undScr   = require('underscore');
 //npm install --save undersacore 
 
+
+var dirtFullSet = [];
 var players = ['a',
 			   'b',
 			   'c',
@@ -23,18 +25,33 @@ function populateDirtFullSet (input) {
 		// var match = (input[i])
 		// console.log(match)
 		for (var j = 0; j < input.length; j++) {
-			if (input[j] !== input[i]) {
-				var pusher = ([
-					input[j],
-					input[i],
-				]);
-			}
-			console.log(pusher); 
+			// if (input[j] !== input[i]) {
+			// 	var pusher = ([
+			// 		input[j],
+			// 		input[i],
+			// 	]);
+			// }
+			var pusher = ([
+				input[j],
+				input[i],
+			]);
+			console.log(pusher);
+			dirtFullSet.push(pusher); 
 		}
-		// newArray.push(pusher);
 		
-		console.log('BREAK');
+		
+		// console.log('BREAK');
 	};
+	// console.log(dirtFullSet)
 };
 
+
+
 populateDirtFullSet(players);
+
+
+
+
+
+
+
