@@ -2,6 +2,8 @@ var undScr   = require('underscore');
 //npm install --save undersacore 
 
 
+
+
 var dirtFullSet = [];
 var players = ['a',
 			   'b',
@@ -19,6 +21,7 @@ var players = ['a',
 
 //Populate all possible combinations-Including duplicates
 function populateDirtFullSet (input) {
+	
 	// dirtyFull list of all possible combos
 	for (var i = 0; i < input.length; i++) {
 		// console.log(i)
@@ -31,27 +34,26 @@ function populateDirtFullSet (input) {
 			// 		input[i],
 			// 	]);
 			// }
-			var pusher = ([
-				input[j],
-				input[i],
-			]);
-			console.log(pusher);
-			dirtFullSet.push(pusher); 
+			var pusher = ([input[j],input[i]]);
+			dirtFullSet.push(pusher);
+			 
 		}
 		
 		
 		// console.log('BREAK');
 	};
 	// console.log(dirtFullSet)
+	return dirtFullSet;
 };
 
 
 
-populateDirtFullSet(players);
+var test = populateDirtFullSet(players);
+console.log(test);
 
 
 
 
-
+//Now I have an input array with duplicate values (a,a = a,a) (l,e = l,e) and meaning (a,e = e,a)
 
 
