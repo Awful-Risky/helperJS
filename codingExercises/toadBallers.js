@@ -24,10 +24,10 @@ function populateDirtFullSet (input) {
 		// console.log(match)
 		for (var j = 0; j < input.length; j++) {
 			if (input[j] !== input[i]) {
-				var pusher = ({
-					p1 : input[j],
-					p2 : input[i],
-				})
+				var pusher = ([
+					input[j],
+					input[i],
+				]);
 			}
 			console.log(pusher); 
 		}
