@@ -1,4 +1,4 @@
-var undScr   = require('underscore');
+var _score   = require('underscore');
 //npm install --save undersacore 
 
 
@@ -20,7 +20,7 @@ var players = ['a',
 
 
 //Populate all possible combinations-Including duplicates
-function populateDirtFullSet (input) {
+function dirtPopulateFullSet (input) {
 	
 	// dirtyFull list of all possible combos
 	for (var i = 0; i < input.length; i++) {
@@ -48,12 +48,26 @@ function populateDirtFullSet (input) {
 
 
 
-var test = populateDirtFullSet(players);
+var test = dirtPopulateFullSet(players);
 console.log(test);
 
 
 
 
+function cleanSetUnique (inputSet) {
+	for (var i = 0; i < inputSet.length; i++) {
+		for (var j = 0; j < inputSet.length; i++) {
+			var concat = inputSet[i].concat(inputSet[j]);
+			var unique = _score.uniq(concat);
+			// if (concat.unig < 3 please push to new array for differenicing on the original array to create a unique set of A,E combos) {};
+		};
+	};
+};
+
+//One of my favorite business quotes...From Carolynn Johnston:"Yeah :),...Unix is power"
+
 //Now I have an input array with duplicate values (a,a = a,a) (l,e = l,e) and meaning (a,e = e,a)
-
-
+// for i in fullArray (of [a,b] sets)
+// 	for j in fullArray
+// 		if i concat j.uniq.length < 3...push to new array and then difference at the end?
+// 			array[i].concat(array[j]).undScr.uniq.length
