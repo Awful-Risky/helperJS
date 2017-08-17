@@ -49,20 +49,30 @@ function dirtPopulateFullSet (input) {
 
 
 var test = dirtPopulateFullSet(players);
-console.log(test);
+// console.log(test);
 
 
 
-
+var diffArray = [];
 function cleanSetUnique (inputSet) {
 	for (var i = 0; i < inputSet.length; i++) {
-		for (var j = 0; j < inputSet.length; i++) {
+		for (var j = 0; j < inputSet.length; j++) {
 			var concat = inputSet[i].concat(inputSet[j]);
 			var unique = _score.uniq(concat);
+			console.log ('Testong...', unique)
+			//Working on it
+			// for (var k = 0; k < unique.length; k++) {
+			// 	if (unique[k].length < 3) {
+			// 		diffArray.push(unique[k])
+			// 	}
+			// };
 			// if (concat.unig < 3 please push to new array for differenicing on the original array to create a unique set of A,E combos) {};
 		};
 	};
+
 };
+
+cleanSetUnique(test);
 
 //One of my favorite business quotes...From Carolynn Johnston:"Yeah :),...Unix is power"
 
