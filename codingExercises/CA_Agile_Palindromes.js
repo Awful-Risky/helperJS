@@ -14,7 +14,7 @@
 
 var checkPalindrome = function (word) {
     if (word.length < 2) {
-      console.log('This word has less than 2 characters')
+      // console.log('This word has less than 2 characters')
       return false
     }
   var reverse = word.split("").reverse().join("");
@@ -76,3 +76,12 @@ var findPalindromes = function (isIt) {
 
 var finalTest = findPalindromes('momyyydad');
 console.log('Final Test', finalTest);
+
+
+// Hey Justin & Jon,
+// I really enjoyed meeting you and learning about what you all are up to. I'm admittedly brewing ideas already on how to leverage the web to maybe answer some of the questions you guys have.
+// Speaking of questions...I've been wrestling a bit with the question of salary.
+// If I'm being candid, I'm targeting the $95k-$120k range with the aim of landing at - or north of  - $100k.  Does that sound reasonable from your perspective?
+// I'd also like to stress that I'm open to other ranges because I'm so stoked about the potential of joining what your group is doing.
+// I hope it's not to off color approaching you two directly with my quandary, and if you're not free to talk about it I totally understand. 
+// Either way, Looking forward to my conversation with Alyson tomorrow! 

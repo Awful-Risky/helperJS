@@ -59,7 +59,7 @@ function cleanSetUnique (inputSet) {
 		for (var j = 0; j < inputSet.length; j++) {
 			var concat = inputSet[i].concat(inputSet[j]);
 			var unique = _score.uniq(concat);
-			console.log ('Testong...', unique)
+			console.log ('Testing...', unique)
 			//Working on it
 			// for (var k = 0; k < unique.length; k++) {
 			// 	if (unique[k].length < 3) {
